@@ -1,1 +1,634 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewise NG | Public Transport Fare Guide</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Farewise <span>NG</span></div>
+
+      <nav class="farewise-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#fare-checker">Fare Checker</a>
+    <a href="#coverage">Coverage Areas</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+        <a href="#fare-checker" class="header-btn">Get Started</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-heading">YOUR JOURNEY, MADE EASIER</p>
+            <h1>Travel Smarter.<br>Know Your Fare.</h1>
+
+            <p>
+                Find estimated public transport fares before you travel.
+                Plan your journey across Abuja FCT and Nasarawa State
+                with confidence.
+            </p>
+
+            <a href="#fare-checker" class="primary-btn">
+                Check Transport Fare
+            </a>
+        </div>
+
+        <div class="hero-card">
+            <h3>Plan Your Journey</h3>
+            <p>Know your route. Know your fare.</p>
+            <div class="route-visual">
+                <span>📍 Starting Point</span>
+                <span class="route-line">● ───────── ●</span>
+                <span>📍 Destination</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FARE CHECKER -->
+    <section class="fare-section" id="fare-checker">
+        <div class="section-heading">
+            <p>PLAN BEFORE YOU TRAVEL</p>
+            <h2>Check Your Transport Fare</h2>
+            <span>
+                Enter your journey details to view available fare information.
+            </span>
+        </div>
+        <div class="fare-form">
+
+    <div class="form-group">
+        <label for="state">Select State or Territory</label>
+        <select id="state">
+            <option value="">Choose location</option>
+            <option value="Abuja FCT">Abuja FCT</option>
+            <option value="Nasarawa State">Nasarawa State</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="area">Select Area Council or LGA</label>
+        <select id="area">
+            <option value="">Choose Area Council or LGA</option>
+            <option value="AMAC">AMAC</option>
+            <option value="Bwari">Bwari</option>
+            <option value="Gwagwalada">Gwagwalada</option>
+            <option value="Kuje">Kuje</option>
+            <option value="Abaji">Abaji</option>
+            <option value="Kwali">Kwali</option>
+            <option value="Akwanga">Akwanga</option>
+            <option value="Awe">Awe</option>
+            <option value="Doma">Doma</option>
+            <option value="Karu">Karu</option>
+            <option value="Keana">Keana</option>
+            <option value="Keffi">Keffi</option>
+            <option value="Kokona">Kokona</option>
+            <option value="Lafia">Lafia</option>
+            <option value="Nasarawa">Nasarawa</option>
+            <option value="Nasarawa Eggon">Nasarawa Eggon</option>
+            <option value="Obi">Obi</option>
+            <option value="Toto">Toto</option>
+            <option value="Wamba">Wamba</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="from">Starting Point</label>
+        <select id="from">
+            <option value="">Select starting point</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="to">Destination</label>
+        <select id="to">
+            <option value="">Select destination</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="transport">Transport Type</label>
+        <select id="transport">
+            <option value="">Choose transport type</option>
+            <option value="Bus">Bus</option>
+            <option value="Keke">Keke</option>
+            <option value="Taxi">Taxi</option>
+        </select>
+    </div>
+
+    <div class="form-group fare-search-button">
+        <button id="searchBtn" type="button">
+            Search Estimated Fare
+        </button>
+    </div>
+
+    <div id="result">
+        Your estimated fare information will appear here.
+    </div>
+
+</div>
+    </section>
+
+    <!-- COVERAGE AREAS -->
+    <section class="coverage-section" id="coverage">
+        <div class="section-heading">
+            <p>OUR SERVICE LOCATIONS</p>
+            <h2>Explore Our Coverage Areas</h2>
+            <span>
+                Farewise NG covers Abuja FCT and Nasarawa State,
+                including their Area Councils and Local Government Areas.
+            </span>
+        </div>
+
+        <!-- ABUJA FCT -->
+        <div class="location-group">
+            <h3>Abuja Federal Capital Territory (FCT)</h3>
+            <p>Explore the six Area Councils and some of their communities.</p>
+
+            <div class="coverage-grid">
+
+                <div class="coverage-card">
+                    <h3>AMAC</h3>
+                    <p>Abuja Municipal Area Council</p>
+                    <ul>
+                        <li>Wuse</li>
+                        <li>Garki</li>
+                        <li>Maitama</li>
+                        <li>Utako</li>
+                        <li>Gwarinpa</li>
+                        <li>Jabi</li>
+                        <li>Asokoro</li>
+                        <li>Central Area</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Bwari</h3>
+                    <p>Bwari Area Council</p>
+                    <ul>
+                        <li>Bwari</li>
+                        <li>Kubwa</li>
+                        <li>Dutse</li>
+                        <li>Ushafa</li>
+                        <li>Byazhin</li>
+                        <li>Kawu</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Gwagwalada</h3>
+                    <p>Gwagwalada Area Council</p>
+                    <ul>
+                        <li>Gwagwalada</li>
+                        <li>Zuba</li>
+                        <li>Ibwa</li>
+                        <li>Dobi</li>
+                        <li>Paiko</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Kuje</h3>
+                    <p>Kuje Area Council</p>
+                    <ul>
+                        <li>Kuje</li>
+                        <li>Chibiri</li>
+                        <li>Kwaku</li>
+                        <li>Rubochi</li>
+                        <li>Gaube</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Abaji</h3>
+                    <p>Abaji Area Council</p>
+                    <ul>
+                        <li>Abaji</li>
+                        <li>Yaba</li>
+                        <li>Gawu</li>
+                        <li>Rimba</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Kwali</h3>
+                    <p>Kwali Area Council</p>
+                    <ul>
+                        <li>Kwali</li>
+                        <li>Kundu</li>
+                        <li>Yangoji</li>
+                        <li>Dafa</li>
+                        <li>Pai</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NASARAWA STATE -->
+        <div class="location-group">
+            <h3>Nasarawa State</h3>
+            <p>Explore the 13 Local Government Areas and some of their towns.</p>
+
+            <div class="coverage-grid">
+
+                <div class="coverage-card">
+                    <h3>Akwanga</h3>
+                    <ul>
+                        <li>Akwanga</li>
+                        <li>Andaha</li>
+                        <li>Nunku</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Awe</h3>
+                    <ul>
+                        <li>Awe</li>
+                        <li>Azara</li>
+                        <li>Madaki</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Doma</h3>
+                    <ul>
+                        <li>Doma</li>
+                        <li>Rukubi</li>
+                        <li>Alagye</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Karu</h3>
+                    <ul>
+                        <li>Karu</li>
+                        <li>Mararaba</li>
+                        <li>New Karu</li>
+                        <li>New Nyanya</li>
+                        <li>Masaka</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Keana</h3>
+                    <ul>
+                        <li>Keana</li>
+                        <li>Obene</li>
+                        <li>Aloshi</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Keffi</h3>
+                    <ul>
+                        <li>Keffi</li>
+                        <li>Angwan Rimi</li>
+                        <li>Sabon Gari</li>
+                        <li>Yara</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Kokona</h3>
+                    <ul>
+                        <li>Garaku</li>
+                        <li>Kokona</li>
+                        <li>Agwada</li>
+                        <li>Hadari</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Lafia</h3>
+                    <ul>
+                        <li>Lafia</li>
+                        <li>Shabu</li>
+                        <li>Assakio</li>
+                        <li>Akura</li>
+                        <li>Adogi</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Nasarawa</h3>
+                    <ul>
+                        <li>Nasarawa</li>
+                        <li>Udenin Gida</li>
+                        <li>Loko</li>
+                        <li>Onda</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Nasarawa Eggon</h3>
+                    <ul>
+                        <li>Nasarawa Eggon</li>
+                        <li>Wakama</li>
+                        <li>Arikya</li>
+                        <li>Umme</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Obi</h3>
+                    <ul>
+                        <li>Obi</li>
+                        <li>Obi Town</li>
+                        <li>Adudu</li>
+                        <li>Agwatashi</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Toto</h3>
+                    <ul>
+                        <li>Toto</li>
+                        <li>Umaisha</li>
+                        <li>Gadabuke</li>
+                        <li>Ugya</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+                <div class="coverage-card">
+                    <h3>Wamba</h3>
+                    <ul>
+                        <li>Wamba</li>
+                        <li>Rinze</li>
+                        <li>Jimiya</li>
+                        <li>Mangar</li>
+                    </ul>
+                    <a href="#fare-checker">Explore routes</a>
+                </div>
+
+            </div>
+        </div>
+
+        <p class="coverage-note">
+            Note: These locations describe the planned coverage area.
+            Fare information may not yet be available for every route.
+        </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="section-heading">
+            <p>ABOUT FAREWISE NG</p>
+            <h2>Making Transport Information Easier</h2>
+        </div>
+
+        <p>
+            Farewise NG is a public transport fare information guide
+            designed to help passengers understand estimated transport
+            costs before beginning their journeys.
+        </p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+        <div class="section-heading">
+            <p>SIMPLE AND CONVENIENT</p>
+            <h2>How It Works</h2>
+        </div>
+
+        <div class="coverage-grid">
+            <div class="coverage-card">
+                <h3>01. Choose Your Route</h3>
+                <p>Enter your starting point and destination.</p>
+            </div>
+
+            <div class="coverage-card">
+                <h3>02. Select Transport</h3>
+                <p>Choose bus, keke or taxi.</p>
+            </div>
+
+            <div class="coverage-card">
+                <h3>03. View Fare</h3>
+                <p>Check the available estimated fare information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Farewise NG</h2>
+            <span>
+                Helping passengers make informed transport decisions.
+            </span>
+        </div>
+    </section>
+    <!-- ACCOUNT SECTION -->
+    <section class="account-section" id="account">
+        <h2>Account Access</h2>
+        <p>Register or log in to access your Farewise NG account.</p>
+
+        <div class="account-container">
+
+            <div class="account-box">
+                <h3>Create an Account</h3>
+
+                <form id="registerForm">
+                    <div class="form-group">
+    <label for="regName">Full Name</label>
+    <input
+        type="text"
+        id="regName"
+        placeholder="Enter your full name"
+        required
+    >
+</div>
+
+<div class="form-group">
+    <label for="regEmail">Email Address</label>
+    <input
+        type="email"
+        id="regEmail"
+        placeholder="Enter your email address"
+        required
+    >
+</div>
+
+<div class="form-group">
+    <label for="regPassword">Password</label>
+
+    <div class="password-wrapper">
+        <input
+            type="password"
+            id="regPassword"
+            placeholder="Enter your password"
+            required
+        >
+
+        <button
+            type="button"
+            id="toggleRegPassword"
+        >👁</button>
+    </div>
+</div>
+
+                    <label for="regRole">Account Type</label>
+                    <select id="regRole" required>
+                        <option value="">Select account type</option>
+                        <option value="customer">Customer</option>
+                        <option value="operator">Operator</option>
+                    </select>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="account-box">
+                <h3>Welcome Back</h3>
+
+                <form id="loginForm">
+
+    <div class="form-group">
+        <label for="loginEmail">Email Address</label>
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter your email address"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="loginPassword">Password</label>
+
+        <div class="password-wrapper">
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button
+                type="button"
+                id="toggleLoginPassword"
+            >👁</button>
+        </div>
+    </div>
+
+    <button type="submit">Login</button>
+
+    <button type="button" id="forgotPasswordBtn">
+        Forgot Password?
+    </button>
+
+</form>
+            </div>
+
+        </div>
+    </section>
+   
+<!-- CUSTOMER DASHBOARD -->
+<section class="dashboard-section" id="customerDashboard" hidden>
+
+    <div class="dashboard-header">
+        <h2>Customer Dashboard</h2>
+        <p>Welcome to your Farewise NG account.</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Welcome Back!</h3>
+        <p id="customerName">Customer Name</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Quick Access</h3>
+        <p>Check transport fares before travelling.</p>
+        <button type="button" onclick="document.getElementById('from').scrollIntoView({behavior:'smooth'})">
+            Check Fare
+        </button>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Fare Updates</h3>
+        <p>Help improve fare information by submitting updated transport fares.</p>
+        <button type="button" id="submitFareButton">
+    Submit Fare Update
+</button>
+
+<form id="fareUpdateForm" hidden>
+    <h3>Submit a New Fare</h3>
+    <label>Starting Point</label>
+    <input type="text" id="updateFrom" placeholder="e.g. Wuse" required>
+
+    <label>Destination</label>
+    <input type="text" id="updateTo" placeholder="e.g. Garki" required>
+
+    <label>Transport Type</label>
+    <select id="updateTransport" required>
+        <option value="">Select transport</option>
+        <option value="Keke">Keke</option>
+        <option value="Bus">Bus</option>
+        <option value="Taxi">Taxi</option>
+    </select>
+
+    <label>Fare Amount (₦)</label>
+    <input type="number" id="updateFare" min="1" placeholder="Enter fare" required>
+
+    <label>Additional Information</label>
+    <textarea id="updateNote" placeholder="Any additional details"></textarea>
+
+    <button type="submit">Send Fare Update</button>
+
+</form>
+  <div id="fareUpdatesList">
+    <p>Loading fare updates...</p>
+</div>
+    </div>
+
+    <button type="button" id="customerLogout">Logout</button>
+
+</section>
+  <div id="adminPanel" hidden>
+    <h2>Admin Dashboard</h2>
+      <button type="button" id="adminLogoutBtn">Logout</button>
+    <h3>Manage Fare Updates</h3>
+
+    <div id="adminFareUpdatesList">
+        <p>Loading pending approvals...</p>
+    </div>
+</div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h3>Farewise NG</h3>
+        <p>Know your route. Know your fare.</p>
+        <p>Public Transport Fare Information Guide</p>
+        <p>&copy; 2026 Farewise NG. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
+  
+
+  
