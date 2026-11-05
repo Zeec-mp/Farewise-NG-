@@ -1,0 +1,1072 @@
+/* FAREWISE NG - WEBSITE DESIGN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #172b46;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 7%;
+  background: #ffffff;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 32px;
+}
+
+.logo h2 {
+  font-size: 23px;
+  color: #123c70;
+}
+
+.logo h2 span {
+  color: #2684df;
+}
+
+.logo small {
+  display: block;
+  font-size: 10px;
+  color: #64748b;
+}
+
+.navigation {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navigation a, .login-link {
+  text-decoration: none;
+  color: #334b68;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.register-btn, .primary-btn {
+  display: inline-block;
+  background: #1769b4;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 75px 8%;
+  background: linear-gradient(120deg, #edf6ff, #ffffff);
+  min-height: 410px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 540px;
+}
+
+.welcome-tag, .section-heading span {
+  color: #1774c7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.15;
+  margin: 18px 0;
+  color: #123c70;
+}
+
+.hero h1 span {
+  color: #2185df;
+}
+
+.hero-content p {
+  color: #64748b;
+  max-width: 460px;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.hero-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.route-card {
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30,80,130,0.12);
+  text-align: center;
+}
+
+.route-icon {
+  font-size: 48px;
+}
+
+.route-card h3 {
+  margin: 12px 0;
+  color: #123c70;
+}
+
+.route-card p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.route-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0 12px;
+  color: #2185df;
+}
+
+.route-line div {
+  width: 120px;
+  border-top: 3px dashed #2185df;
+}
+
+.route-card small {
+  font-size: 10px;
+  color: #64748b;
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  color: #123c70;
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: #718096;
+  font-size: 14px;
+}
+
+/* FARE CHECKER */
+.fare-section {
+  padding: 75px 8%;
+  background: #ffffff;
+}
+
+.fare-card {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #e1eaf4;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(30,80,130,0.07);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #263f5d;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d6e1ed;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #334b68;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: 2px solid #8dc6fa;
+  border-color: #2185df;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1769b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-btn:hover, .register-btn:hover, .primary-btn:hover {
+  background: #104e8c;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 17px;
+  background: #f0f7ff;
+  border-radius: 7px;
+  color: #34516f;
+  text-align: center;
+  font-size: 14px;
+}
+
+.disclaimer {
+  margin-top: 12px;
+  color: #8190a2;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* COVERAGE */
+.coverage-section {
+  padding: 70px 8%;
+  background: #f5f9fe;
+}
+
+.coverage-grid, .steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.location-card, .step-card {
+  background: white;
+  padding: 27px;
+  border: 1px solid #e5edf6;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(30,80,130,0.05);
+}
+
+.location-icon {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.location-card h3, .step-card h3 {
+  color: #123c70;
+  margin-bottom: 9px;
+}
+
+.location-card p, .step-card p {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 14px;
+}
+
+.location-card a {
+  text-decoration: none;
+  color: #1774c7;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ABOUT */
+.about-section {
+  padding: 70px 12%;
+  text-align: center;
+}
+
+.about-section > p {
+  max-width: 750px;
+  margin: auto;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* HOW IT WORKS */
+.how-section {
+  padding: 70px 8%;
+  background: #f5f9fe;
+}
+
+.step-card span {
+  display: inline-block;
+  color: #2185df;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* CONTACT */
+.contact-section {
+  text-align: center;
+  padding: 55px 20px;
+  background: #123c70;
+  color: white;
+}
+
+.contact-section h2 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 28px 15px;
+  text-align: center;
+  background: #0b2748;
+  color: #d8e7f7;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media(max-width: 700px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation {
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 55px 7%;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .coverage-grid, .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fare-card {
+    padding: 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+}
+
+/* ACCOUNT SECTION */
+.account-section {
+  padding: 50px 20px;
+  background: #f4f8fc;
+  text-align: center;
+}
+
+.account-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.account-box {
+  background: #ffffff;
+  padding: 25px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.account-box h3 {
+  color: #123b70;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.account-box label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+.account-box input, .account-box select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.account-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #123b70;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* CUSTOMER DASHBOARD */
+.dashboard-section {
+  padding: 40px 20px;
+  background: #f4f8fc;
+  color: #1e293b;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h2 {
+  color: #123b70;
+  font-size: 26px;
+}
+
+.dashboard-header p {
+  color: #475569;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  max-width: 650px;
+  margin: 18px auto;
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 5px solid #123b70;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-card h3 {
+  color: #123b70;
+  margin-bottom: 12px;
+}
+
+.dashboard-card p {
+  line-height: 1.6;
+}
+
+.dashboard-card button, #customerLogout {
+  background: #123b70;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+#customerLogout {
+  display: block;
+  margin: 25px auto 0;
+  min-width: 150px;
+}
+
+.dashboard-card button:hover, #customerLogout:hover {
+  background: #0b2850;
+}
+
+#fareUpdatesList {
+  margin-top: 20px;
+}
+
+#fareUpdatesList > div {
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-left: 5px solid #174ea6;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+#fareUpdatesList h4 {
+  color: #174ea6;
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+#fareUpdatesList p {
+  color: #444444;
+  margin: 7px 0;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE FIX */
+@media screen and(max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  nav, nav.farewise-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav.farewise-nav a {
+    display: inline-block !important;
+    white-space: normal;
+    text-align: center;
+  }
+
+  @media screen and(max-width: 600px) {
+    nav.farewise-nav {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+
+    nav.farewise-nav a {
+      display: block !important;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  input, select, textarea, button {
+    max-width: 100%;
+  }
+
+  select, input, textarea {
+    width: 100%;
+  }
+
+  form, section, .container {
+    max-width: 100%;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  /* Stack form fields vertically */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form label, form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Keep form field containers within screen */
+  form div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Arrange navigation links properly */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  nav li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px;
+  }
+}
+
+/* Registration form mobile layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.password-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.password-wrapper input {
+  flex: 1;
+  min-width: 0;
+}
+
+.password-wrapper button {
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* FAREWISE NG - RESPONSIVE FARE SEARCH */
+.fare-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.fare-form .form-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  gap: 7px;
+}
+
+.fare-form label {
+  display: block;
+  font-weight: 600;
+}
+
+.fare-form select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.fare-search-button, #result {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.fare-search-button button {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+#result {
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+}
+
+/* TABLET */
+@media screen and(max-width: 900px) {
+  .fare-form {
+    gap: 14px;
+    padding: 16px;
+  }
+}
+
+/* MOBILE */
+@media screen and(max-width: 600px) {
+  .fare-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .fare-form .form-group, .fare-search-button, #result {
+    grid-column: 1;
+  }
+
+  .fare-form select {
+    min-height: 46px;
+    font-size: 16px;
+  }
+}
+
+/* FAREWISE NG RESPONSIVE NAVIGATION */
+.farewise-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.farewise-nav a {
+  display: inline-block;
+  text-decoration: none;
+  white-space: normal;
+  text-align: center;
+}
+
+/* TABLET */
+@media screen and(max-width: 900px) {
+  .farewise-nav {
+    gap: 12px 16px;
+  }
+}
+
+/* MOBILE */
+@media screen and(max-width: 600px) {
+  .farewise-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .farewise-nav a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+/* FAREWISE NG - COMPLETE RESPONSIVE HEADER */
+header.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  max-width: 100%;
+  padding: 18px 5%;
+  box-sizing: border-box;
+}
+
+header.header .logo {
+  flex-shrink: 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: #123c70;
+}
+
+header.header .logo span {
+  color: #2684df;
+}
+
+header.header nav.farewise-nav {
+  display: flex !important;
+  flex: 1 1 auto;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 12px 20px;
+  min-width: 0;
+}
+
+header.header nav.farewise-nav a {
+  display: inline-block !important;
+  color: #334b68;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header.header .header-btn {
+  flex-shrink: 0;
+}
+
+/* TABLET */
+@media screen and(max-width: 900px) {
+  header.header {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  header.header nav.farewise-nav {
+    flex-basis: 100%;
+  }
+}
+
+/* MOBILE */
+@media screen and(max-width: 600px) {
+  header.header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  header.header .logo {
+    text-align: center;
+  }
+
+  header.header nav.farewise-nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 5px;
+    width: 100%;
+  }
+
+  header.header nav.farewise-nav a {
+    display: block !important;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  header.header .header-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+/* FINAL FAREWISE HEADER FIX */
+header.header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 15px !important;
+  width: 100% !important;
+  padding: 20px 15px !important;
+  box-sizing: border-box !important;
+}
+
+header.header .logo {
+  display: block !important;
+  text-align: center !important;
+  font-size: 24px !important;
+}
+
+header.header nav.farewise-nav {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  width: 100% !important;
+  gap: 5px !important;
+}
+
+header.header nav.farewise-nav a {
+  display: block !important;
+  width: 100% !important;
+  padding: 10px !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+header.header .header-btn {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+@media(min-width: 901px) {
+  header.header {
+    flex-direction: row !important;
+  }
+
+  header.header nav.farewise-nav {
+    flex-direction: row !important;
+    width: auto !important;
+    flex: 1 !important;
+  }
+
+  header.header nav.farewise-nav a {
+    width: auto !important;
+  }
+
+  header.header .header-btn {
+    width: auto !important;
+  }
+}
+
+/* FAREWISE NG - FARE RESULT CARD */
+#result {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 22px;
+  background: #f0f6fc;
+  border: 1px solid #d5e5f5;
+  border-radius: 12px;
+  color: #123c70;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  box-shadow: 0 4px 12px rgba(18, 60, 112, 0.06);
+}
+
+#result strong {
+  color: #123c70;
+  font-weight: 700;
+}
+
+@media(max-width: 600px) {
+  #result {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+/* FAREWISE NG - SMOOTH PAGE SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* FAREWISE NG - SECTION SPACING */
+section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+section h2 {
+  margin-bottom: 18px;
+}
+
+section p {
+  line-height: 1.7;
+}
+
+@media(max-width: 600px) {
+  section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+/* SUBMIT A NEW FARE FORM */
+#fareUpdateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 22px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+#fareUpdateForm[hidden] {
+  display: none !important;
+}
+
+#fareUpdateForm h3 {
+  margin: 0 0 12px;
+  color: #173b68;
+  font-size: 21px;
+}
+
+#fareUpdateForm label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  color: #173b68;
+  font-weight: 600;
+}
+
+#fareUpdateForm input, #fareUpdateForm select, #fareUpdateForm textarea {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccd5e0;
+  border-radius: 7px;
+  background: #fff;
+  font-size: 15px;
+}
+
+#fareUpdateForm textarea {
+  min-height: 100px;
+}
+
+#fareUpdateForm button {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 7px;
+  background: #173b68;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
